@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hdl_grabber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gpc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gpc_utils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cloud_grid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hdl_viewer_grabber_helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="movement_model.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="imu_tras.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ficp_tools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="string_helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="file_helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="project_plane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="point_cloud_helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="process_status.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dropped.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mat_helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcl_pair_visualizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="feature_align.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cloud_density.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hdl_grabber.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="boost.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rawdatadefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="boost_graph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gpc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gpc_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lum.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cmm_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cloud_grid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hdl_viewer_grabber_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="movement_model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="imu_tras.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="synchronized_queue.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ficp_tools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="string_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="file_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="project_plane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="point_cloud_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="process_status.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mat_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcl_pair_visualizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="elch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="elch.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sample_consensus_prerejective.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sample_consensus_prerejective.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="correspondence_rejection_poly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="correspondence_rejection_poly.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="conversions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PCLPointCloud2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PCLPointField.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="feature_align.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{15836B5A-E7C0-411A-85DC-7CA18D594C81}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PointIcpReg</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalOptions>-Zm500 %(AdditionalOptions)</AdditionalOptions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(PCL_PATH)\3rdParty\Boost\include;$(PCL_PATH)\3rdParty\Eigen\include;$(PCL_PATH)\3rdParty\FLANN\include;$(PCL_PATH)\3rdParty\Qhull\include;$(PCL_PATH)\3rdParty\VTK\include\vtk-5.8;$(OPENNI_PATH)\Include;$(PCL_PATH)\include\pcl-1.6;$(ExecutablePath);$(OPENCV_PATH)\sources\include;$(OPENCV_PATH)\build\include;trimesh2\include;$(PCAP_PATH)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PCAP_PATH)\Lib;$(PCL_PATH)\lib;$(OPENNI_PATH)\Lib;$(PCL_PATH)\3rdParty\Boost\lib;$(PCL_PATH)\3rdParty\Qhull\lib;$(PCL_PATH)\3rdParty\VTK\lib\vtk-5.8;$(PCL_PATH)\3rdParty\FLANN\lib;.\trimesh2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>trimeshd.lib;opengl32.lib;pcl_kdtree_debug.lib;pcl_io_debug.lib;pcl_search_debug.lib;pcl_segmentation_debug.lib;pcl_apps_debug.lib;pcl_features_debug.lib;pcl_filters_debug.lib;pcl_visualization_debug.lib;pcl_common_debug.lib;flann_cpp_s-gd.lib;vtkalglib-gd.lib;vtkCharts-gd.lib;vtkCommon-gd.lib;vtkDICOMParser-gd.lib;vtkexoIIc-gd.lib;vtkexpat-gd.lib;vtkFiltering-gd.lib;vtkfreetype-gd.lib;vtkftgl-gd.lib;vtkGenericFiltering-gd.lib;vtkGeovis-gd.lib;vtkGraphics-gd.lib;vtkhdf5-gd.lib;vtkHybrid-gd.lib;vtkImaging-gd.lib;vtkInfovis-gd.lib;vtkIO-gd.lib;vtkjpeg-gd.lib;vtklibxml2-gd.lib;vtkmetaio-gd.lib;vtkNetCDF-gd.lib;vtkNetCDF_cxx-gd.lib;vtkpng-gd.lib;vtkproj4-gd.lib;vtkRendering-gd.lib;vtksqlite-gd.lib;vtksys-gd.lib;vtktiff-gd.lib;vtkverdict-gd.lib;vtkViews-gd.lib;vtkVolumeRendering-gd.lib;vtkWidgets-gd.lib;vtkzlib-gd.lib;libboost_thread-vc100-mt-gd-1_49.lib;Packet.lib;wpcap.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalOptions>-Zm500 %(AdditionalOptions)</AdditionalOptions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(PCLX64_PATH)\3rdParty\Boost\include;$(PCLX64_PATH)\3rdParty\Eigen\include;$(PCLX64_PATH)\3rdParty\FLANN\include;$(PCLX64_PATH)\3rdParty\Qhull\include;$(PCLX64_PATH)\3rdParty\VTK\include\vtk-5.8;$(OPENNIX64_PATH)\Include;$(PCLX64_PATH)\include\pcl-1.6;$(ExecutablePath);$(OPENCV_PATH)\sources\include;$(OPENCV_PATH)\build\include;trimesh2\include;$(PCAP_PATH)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PCAP_PATH)\Lib\x64;$(PCLX64_PATH)\lib;$(OPENNIX64_PATH)\Lib;$(PCLX64_PATH)\3rdParty\Boost\lib;$(PCLX64_PATH)\3rdParty\Qhull\lib;$(PCLX64_PATH)\3rdParty\VTK\lib\vtk-5.8;$(PCLX64_PATH)\3rdParty\FLANN\lib;.\trimesh2\libx64;$(OPENCV_PATH)\build\x64\vc10\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>trimeshd.lib;opengl32.lib;pcl_kdtree_debug.lib;pcl_io_debug.lib;pcl_search_debug.lib;pcl_segmentation_debug.lib;pcl_apps_debug.lib;pcl_features_debug.lib;pcl_filters_debug.lib;pcl_visualization_debug.lib;pcl_common_debug.lib;flann_cpp_s-gd.lib;vtkalglib-gd.lib;vtkCharts-gd.lib;vtkCommon-gd.lib;vtkDICOMParser-gd.lib;vtkexoIIc-gd.lib;vtkexpat-gd.lib;vtkFiltering-gd.lib;vtkfreetype-gd.lib;vtkftgl-gd.lib;vtkGenericFiltering-gd.lib;vtkGeovis-gd.lib;vtkGraphics-gd.lib;vtkhdf5-gd.lib;vtkHybrid-gd.lib;vtkImaging-gd.lib;vtkInfovis-gd.lib;vtkIO-gd.lib;vtkjpeg-gd.lib;vtklibxml2-gd.lib;vtkmetaio-gd.lib;vtkNetCDF-gd.lib;vtkNetCDF_cxx-gd.lib;vtkpng-gd.lib;vtkproj4-gd.lib;vtkRendering-gd.lib;vtksqlite-gd.lib;vtksys-gd.lib;vtktiff-gd.lib;vtkverdict-gd.lib;vtkViews-gd.lib;vtkVolumeRendering-gd.lib;vtkWidgets-gd.lib;vtkzlib-gd.lib;libboost_thread-vc100-mt-gd-1_49.lib;Packet.lib;wpcap.lib;opencv_core248d.lib;opencv_calib3d248d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>-Zm500 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(PCAP_PATH)\Include;$(PCL_PATH)\3rdParty\Boost\include;$(PCL_PATH)\3rdParty\Eigen\include;$(PCL_PATH)\3rdParty\FLANN\include;$(PCL_PATH)\3rdParty\Qhull\include;$(PCL_PATH)\3rdParty\VTK\include\vtk-5.8;$(OPENNI_PATH)\Include;$(PCL_PATH)\include\pcl-1.6;$(ExecutablePath);$(OPENCV_PATH)\sources\include;$(OPENCV_PATH)\build\include;trimesh2\include;</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>trimesh.lib;opengl32.lib;pcl_kdtree_release.lib;pcl_io_release.lib;pcl_search_release.lib;pcl_segmentation_release.lib;pcl_apps_release.lib;pcl_features_release.lib;pcl_filters_release.lib;pcl_visualization_release.lib;pcl_common_release.lib;flann_cpp_s.lib;libboost_system-vc100-mt-1_47.lib;libboost_filesystem-vc100-mt-1_47.lib;libboost_thread-vc100-mt-1_47.lib;libboost_date_time-vc100-mt-1_47.lib;libboost_iostreams-vc100-mt-1_47.lib;vtkalglib.lib;vtkCharts.lib;vtkCommon.lib;vtkDICOMParser.lib;vtkexoIIc.lib;vtkexpat.lib;vtkFiltering.lib;vtkfreetype.lib;vtkftgl.lib;vtkGenericFiltering.lib;vtkGeovis.lib;vtkGraphics.lib;vtkhdf5.lib;vtkHybrid.lib;vtkImaging.lib;vtkInfovis.lib;vtkIO.lib;vtkjpeg.lib;vtklibxml2.lib;vtkmetaio.lib;vtkNetCDF.lib;vtkNetCDF_cxx.lib;vtkpng.lib;vtkproj4.lib;vtkRendering.lib;vtksqlite.lib;vtksys.lib;vtktiff.lib;vtkverdict.lib;vtkViews.lib;vtkVolumeRendering.lib;vtkWidgets.lib;vtkzlib.lib;Packet.lib;wpcap.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(PCAP_PATH)\Lib;$(PCL_PATH)\lib;$(OPENNI_PATH)\Lib;$(PCL_PATH)\3rdParty\Boost\lib;$(PCL_PATH)\3rdParty\Qhull\lib;$(PCL_PATH)\3rdParty\VTK\lib\vtk-5.8;$(PCL_PATH)\3rdParty\FLANN\lib;.\trimesh2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>-Zm500 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(PCLX64_PATH)\3rdParty\Boost\include;$(PCLX64_PATH)\3rdParty\Eigen\include;$(PCLX64_PATH)\3rdParty\FLANN\include;$(PCLX64_PATH)\3rdParty\Qhull\include;$(PCLX64_PATH)\3rdParty\VTK\include\vtk-5.8;$(OPENNIX64_PATH)\Include;$(PCLX64_PATH)\include\pcl-1.6;$(ExecutablePath);$(OPENCV_PATH)\sources\include;$(OPENCV_PATH)\build\include;trimesh2\include;$(PCAP_PATH)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>trimesh.lib;opengl32.lib;pcl_kdtree_release.lib;pcl_io_release.lib;pcl_search_release.lib;pcl_segmentation_release.lib;pcl_apps_release.lib;pcl_features_release.lib;pcl_filters_release.lib;pcl_visualization_release.lib;pcl_common_release.lib;flann_cpp_s.lib;libboost_system-vc100-mt-1_47.lib;libboost_filesystem-vc100-mt-1_47.lib;libboost_thread-vc100-mt-1_47.lib;libboost_date_time-vc100-mt-1_47.lib;libboost_iostreams-vc100-mt-1_47.lib;vtkalglib.lib;vtkCharts.lib;vtkCommon.lib;vtkDICOMParser.lib;vtkexoIIc.lib;vtkexpat.lib;vtkFiltering.lib;vtkfreetype.lib;vtkftgl.lib;vtkGenericFiltering.lib;vtkGeovis.lib;vtkGraphics.lib;vtkhdf5.lib;vtkHybrid.lib;vtkImaging.lib;vtkInfovis.lib;vtkIO.lib;vtkjpeg.lib;vtklibxml2.lib;vtkmetaio.lib;vtkNetCDF.lib;vtkNetCDF_cxx.lib;vtkpng.lib;vtkproj4.lib;vtkRendering.lib;vtksqlite.lib;vtksys.lib;vtktiff.lib;vtkverdict.lib;vtkViews.lib;vtkVolumeRendering.lib;vtkWidgets.lib;vtkzlib.lib;opencv_core248.lib;opencv_calib3d248.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(PCAP_PATH)\Lib\x64;$(PCLX64_PATH)\lib;$(OPENNIX64_PATH)\Lib;$(PCLX64_PATH)\3rdParty\Boost\lib;$(PCLX64_PATH)\3rdParty\Qhull\lib;$(PCLX64_PATH)\3rdParty\VTK\lib\vtk-5.8;$(PCLX64_PATH)\3rdParty\FLANN\lib;.\trimesh2\libx64;$(OPENCV_PATH)\build\x64\vc10\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cloud_density.cpp" />
+    <ClCompile Include="feature_align.cpp" />
+    <ClCompile Include="dropped.cpp" />
+    <ClCompile Include="file_helper.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ficp_tools.cpp" />
+    <ClCompile Include="mat_helper.cpp" />
+    <ClCompile Include="pcl_pair_visualizer.cpp" />
+    <ClCompile Include="point_cloud_helper.cpp" />
+    <ClCompile Include="process_status.cpp" />
+    <ClCompile Include="project_plane.cpp" />
+    <ClCompile Include="string_helper.cpp" />
+    <ClCompile Include="cloud_grid.cpp" />
+    <ClCompile Include="gpc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gpc_utils.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="hdl_viewer_grabber_helper.cpp" />
+    <ClCompile Include="hdl_grabber.cpp" />
+    <ClCompile Include="imu_tras.cpp" />
+    <ClCompile Include="lum.cpp" />
+    <ClCompile Include="movement_model.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="feature_align.h" />
+    <ClInclude Include="boost.h" />
+    <ClInclude Include="boost_graph.h" />
+    <ClInclude Include="cmm_types.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="conversions.h" />
+    <ClInclude Include="correspondence_rejection_poly.h" />
+    <ClInclude Include="correspondence_rejection_poly.hpp" />
+    <ClInclude Include="elch.h" />
+    <ClInclude Include="elch.hpp" />
+    <ClInclude Include="ficp_tools.h" />
+    <ClInclude Include="file_helper.h" />
+    <ClInclude Include="mat_helper.h" />
+    <ClInclude Include="PCLPointCloud2.h" />
+    <ClInclude Include="PCLPointField.h" />
+    <ClInclude Include="pcl_pair_visualizer.h" />
+    <ClInclude Include="point_cloud_helper.h" />
+    <ClInclude Include="process_status.h" />
+    <ClInclude Include="project_plane.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="sample_consensus_prerejective.h" />
+    <ClInclude Include="sample_consensus_prerejective.hpp" />
+    <ClInclude Include="string_helper.h" />
+    <ClInclude Include="cloud_grid.h" />
+    <ClInclude Include="gpc.h" />
+    <ClInclude Include="gpc_utils.h" />
+    <ClInclude Include="hdl_viewer_grabber_helper.h" />
+    <ClInclude Include="hdl_grabber.h" />
+    <ClInclude Include="imu_tras.h" />
+    <ClInclude Include="lum.h" />
+    <ClInclude Include="lum.hpp" />
+    <ClInclude Include="movement_model.h" />
+    <ClInclude Include="rawdatadefine.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="synchronized_queue.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

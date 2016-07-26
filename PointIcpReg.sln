@@ -1,0 +1,45 @@
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointIcpReg", "PointIcpReg.vcxproj", "{15836B5A-E7C0-411A-85DC-7CA18D594C81}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointCloud2VectorGraph", "..\PointCloud2VectorGraph\PointCloud2VectorGraph.vcxproj", "{067669BB-80BF-4F60-B351-6F854CA680A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Debug|Win32.ActiveCfg = Debug|x64
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Debug|Win32.Build.0 = Debug|x64
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Debug|x64.ActiveCfg = Debug|x64
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Debug|x64.Build.0 = Debug|x64
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Release|Mixed Platforms.Build.0 = Release|x64
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Release|Win32.ActiveCfg = Release|Win32
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Release|Win32.Build.0 = Release|Win32
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Release|x64.ActiveCfg = Release|x64
+		{15836B5A-E7C0-411A-85DC-7CA18D594C81}.Release|x64.Build.0 = Release|x64
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Debug|Win32.Build.0 = Debug|Win32
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Debug|x64.ActiveCfg = Debug|x64
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Debug|x64.Build.0 = Debug|x64
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Release|Mixed Platforms.Build.0 = Release|x64
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Release|Win32.ActiveCfg = Release|Win32
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Release|Win32.Build.0 = Release|Win32
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Release|x64.ActiveCfg = Release|x64
+		{067669BB-80BF-4F60-B351-6F854CA680A1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
